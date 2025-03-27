@@ -1,6 +1,6 @@
 # security-headers
 
-'''
+```
 function set_security_headers() {
     if (!headers_sent()) {
         header("Strict-Transport-Security: max-age=31536000; includeSubDomains; preload");
@@ -14,4 +14,4 @@ function set_security_headers() {
     }
 }
 add_action('send_headers', 'set_security_headers');
-'''
+```
